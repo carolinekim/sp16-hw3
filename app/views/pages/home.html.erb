@@ -1,0 +1,20 @@
+<h1>Welcome!</h1>
+<h2>These are the users:</h2>
+<% @users.each do |u| %>
+  <p><%= u.username %> <%= u.age %> <%= u.email %> </p>
+<%end%>
+
+<h2>These are the cats:</h2>
+<% @cats.each do |c| %>
+  <p><%= c.name %> </p>
+<%end%>
+
+<h2> These are the finished todos:</h2>
+<% @finised_tasks.each do |f| %>
+  <p><%= f.tasks %> </p>
+<%end%>
+
+<h2> These are the unfinished todos:</h2>
+<% @unfinished_tasks.each do |h| %>
+    <p><%= h.tasks %> </p>
+<%end%>

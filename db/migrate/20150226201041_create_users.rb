@@ -6,5 +6,7 @@ class CreateUsers < ActiveRecord::Migration
 
       t.timestamps
     end
+
+    rename_column :users, :name, :username
   end
 end
